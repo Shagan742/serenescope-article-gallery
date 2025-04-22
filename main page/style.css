@@ -1,0 +1,47 @@
+/* html */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #FFDFDF;
+}
+
+
+
+/* navbar */
+#submitBtn {
+    font-size: 30px;
+    padding:none;
+    margin:none;
+}
+
+#searchInput {
+    height:40px;
+}
+
+.navbar {
+    height:60px;
+    background-color: #FFFAFA;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+.navbar-brand {
+    font-size:30px;
+    position:relative;
+    bottom:3px;
+}
+
+/* jumbotron */
+
+.jumbotron {
+    height:600px;
+    /* background-image: linear-gradient(#FFFAFA 60%, #FFDFDF); */
+    background-color: white;
+}
+
+.jumbotext {
+    margin-top:400px;
+}
