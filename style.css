@@ -37,11 +37,27 @@ body {
 /* jumbotron */
 
 .jumbotron {
-    height:600px;
-    /* background-image: linear-gradient(#FFFAFA 60%, #FFDFDF); */
-    background-color: white;
+    height:500px;
+    background-image: linear-gradient(#FFFAFA 60%, #FFDFDF);
+    /* background-color: white; */
 }
 
-.jumbotext {
-    margin-top:400px;
+
+
+/* carousels */
+
+.carousel {
+    position:relative;
+}
+
+.card {
+    transform:translateY(10%);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color:black;
+    width:30px;
+    height:30px;
+    top:50%;
+    transform:translateY(-50%);
 }
