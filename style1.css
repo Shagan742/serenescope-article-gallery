@@ -4,38 +4,63 @@ html {
 }
 
 body {
-    background-color: #FFDFDF;
+    background-color: #FFFAFA;
 }
 
 
 
 /* navbar */
-#submitBtn {
-    font-size: 30px;
-    padding:none;
-    margin:none;
-}
-
-#searchInput {
-    height:40px;
-}
 
 .navbar {
-    height:60px;
     background-color: #FFFAFA;
+    position: fixed;
+    width:100%;
+    z-index:49;
 }
 
 .nav-link {
-    font-size: 20px;
+    font-size: 22px;
+    font-style: italic;
+    color:black;
 }
-.navbar-brand {
-    position:relative;
-    bottom:3px;
 
-    font-family: "Italianno", cursive;
+.navbrandimg {
+    height:45px;
+} 
+
+
+/* jumbotron */
+
+.jumbotron {
+    height:600px;
+    background-image: url(imgs/article1jumbotronimg.jpg);
+    filter: brightness(0.8);
+    background-size:cover;
+    background-position-x:center;
+    color:white;
+    box-shadow:0px 2px 15px black;
+    position: relative;
+    z-index:40;
+    background-size:cover;
+    background-position-x:center;
+}
+.jumboheading {
+    font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: 5px;
-  font-size:40px;
+  font-size:70px;
 }
+
+
+
+.jumboheadingSm {
+    font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:50px;
+}
+
+/* texts */
+
+
 

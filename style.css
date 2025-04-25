@@ -19,21 +19,15 @@ body {
 }
 
 .navbar {
-    height:60px;
+    /* height:60px; */
     background-color: #FFFAFA;
 }
 
 .nav-link {
     font-size: 20px;
 }
-.navbar-brand {
-    font-family: "Italianno", cursive;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 5px;
-  font-size:40px;
-    position:relative;
-    bottom:3px;
+.navbrandimg {
+    height:50px;
 }
 
 /* jumbotron */
@@ -41,7 +35,6 @@ body {
 .jumbotron {
     height:500px;
     background-image: linear-gradient(#FFFAFA 60%, #FFDFDF);
-    /* background-color: white; */
 }
 
 
