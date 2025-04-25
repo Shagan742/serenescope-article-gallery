@@ -18,6 +18,7 @@ body {
     width:100%;
     z-index:49;
     border-radius:5px;
+    box-shadow: inset -3px -5px 10px rgba(255, 255, 255, 0.5);
 }
 
 .nav-link {
@@ -49,9 +50,9 @@ body {
   font-style: normal;
 }
 
-.heading {
-    font-size:70px;
-    font-family: "Italianno", cursive;
+
+.step {
+    font-family: "Madimi One", sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 5px;
@@ -59,14 +60,41 @@ body {
   color:black;
 }
 
-.heading1 {
-    font-size:50px;
+/* jumbotron */
+
+.jumbotron {
+    height:600px;
+    box-shadow:0px 2px 15px black;
+    position: relative;
+    z-index:40;
+    background-image: url(imgs/article2jumbimg.webp);
+    background-size:cover;
+    background-position-x:center;
+}
+
+
+
+
+.jumboheading {
     font-family: "Madimi One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 5px;
-  margin-top:60px;
-  color:black;
+    font-weight: 200;
+    font-style: normal;
+  font-size:70px;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+}
+
+
+
+.jumboheadingSm {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size:50px;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
 }
 
 /* cards */
@@ -77,6 +105,16 @@ body {
     font-family: "Madimi One", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.small {
+    min-height:150px;
+    background-color: #ffdfdf;
+    box-shadow: 0px 0px 5px black;
+}
+
+.card-text {
+    font-size:17px;
 }
 
 .card-img-top {
@@ -103,4 +141,13 @@ position:absolute;
     .btn:hover {
         background-color: #ffdfdf;
         color:black;
+    }
+
+    .heading {
+        font-size:70px;
+        font-family: "Italianno", cursive;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 5px;
+      margin-top:60px;
     }
