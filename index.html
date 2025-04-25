@@ -11,6 +11,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
+
+
+  <!-- fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Italianno&family=Madimi+One&family=Yuji+Mai&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -38,9 +45,14 @@
   </header>
   <main>
     <div class="row align-items-center jumbotron">
-      <div class="text-center jumbotext">
-        <h2>SereneScope Article Gallery</h2>
-        <p>
+      <div class="text-center">
+        <h2 class="jumboheading d-none d-md-block">SereneScope Article Gallery</h2>
+        <p class="jumbocaption d-none d-md-block">
+          Current events written with grace and simplicity
+        </p>
+
+        <h2 class="jumboheadingSm d-block d-md-none">SereneScope Article Gallery</h2>
+        <p class="jumbocaptionSm d-md-none d-block">
           Current events written with grace and simplicity
         </p>
       </div>
@@ -52,12 +64,8 @@
       <div class="row my-3">
         <h1 class="heading">Economics</h1>
         <br>
-        <!-- cards in a carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row justify-content-center">
-                <div class="col-sm-6 col-md-4">
+              <div class="row justify-content-center my-3 mx-auto">
+                <div class="col-sm-12 col-md-4 mb-3">
                   <!--start of card#1-->
                   <div class="card h-100">
                     <img src="imgs/card1img.webp" class="card-img-top" alt="SHEIN and Temu apps">
@@ -71,7 +79,7 @@
                   <!--end of card#1-->
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#2-->
                   <div class="card h-100">
                     <img src="imgs/card2img.png" class="card-img-top" alt="Stocks app on a phone">
@@ -86,7 +94,7 @@
                   <!--end of card#2-->
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#3-->
                   <div class="card h-100">
                     <img src="imgs/card3img.webp" class="card-img-top" alt="Store closing signs on window">
@@ -101,56 +109,6 @@
                   <!--end of card#3-->
                 </div>
               </div>
-
-
-            </div>
-            <div class="carousel-item">
-      <div class="row justify-content-center">
-<div class="col-sm-6 col-md-4">
-              <!--start of card#4-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#4-->
-</div>            
-
-            <div class="col-sm-6 col-md-4">
-              <!--start of card#5-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#5-->
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <!--start of card#6-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#6-->
-
-            </div>
-          </div>
-          </div>
-        </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      <!-- end of carousel -->
       </div>
 
 
@@ -158,315 +116,138 @@
         <div class="row mb-3">
           <h1 class="heading">STEM</h1>
           <br>
-          <!-- cards in a carousel -->
-        <div id="carouselExampleIndicators2" class="carousel slide my-5" data-bs-ride="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row justify-content-center">
-                <div class="col-sm-6 col-md-4">
+              <div class="row justify-content-center my-3 mx-auto">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#1-->
                   <div class="card h-100">
-                    <img src="imgs/card1img.webp" class="card-img-top" alt="SHEIN and Temu apps">
+                    <img src="imgs/card4img.png" class="card-img-top" alt="University of Waterloo Building">
                     <div class="card-body">
-                      <h5 class="card-title">SHEIN & Temu about to increase in price, consumers are upset</h5>
-                      <p class="card-text">As a result of Trump's 245% tariffs hitting China, imported goods will face a
-                        hefty price increase.</p>
-                      <a href="index1.html" class="btn btn-primary">Read more</a>
+                      <h5 class="card-title">An investigation of the University of Waterloo effect</h5>
+                      <p class="card-text">Here we will talk about the University of Waterloo and its students' + the internet's opinions on its workload.</p>
+                      <a href="index4.html" class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                   <!--end of card#1-->
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#2-->
                   <div class="card h-100">
-                    <img src="imgs/card2img.png" class="card-img-top" alt="Stocks app on a phone">
+                    <img src="imgs/card5img.jpg" class="card-img-top" alt="Some kind of computer chip">
                     <div class="card-body">
-                      <h5 class="card-title">How to start investing</h5>
-                      <p class="card-text">This article is a step-by-step on how to start investing for beginners
-                        without any huge advanced words that are confusing.</p>
-                      <br>
-                      <a href="index2.html" class="btn btn-primary">Read more</a>
+                      <h5 class="card-title">The rise of quantum computing</h5>
+                      <p class="card-text">This article talks about the rise of quantum computing, a very advanced kind of computing that opens new oppurtunities to just about anything.</p>
+                      <a href="index5.html" class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                   <!--end of card#2-->
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#3-->
                   <div class="card h-100">
-                    <img src="imgs/card3img.webp" class="card-img-top" alt="Store closing signs on window">
+                    <img src="imgs/card6img.png" class="card-img-top" alt="DNA drawing clipart style">
                     <div class="card-body">
-                      <h5 class="card-title">Stores closing in the big ‘25</h5>
-                      <p class="card-text">These are the stores that are closing and/or have significant financial
-                        hardships threatening a close in 2025.</p>
-                      <br>
-                      <a href="index3.html" class="btn btn-primary">Read more</a>
+                      <h5 class="card-title">The long term consequences of CRISPR and Gene Editing </h5>
+                      <p class="card-text">CRISPR, although it is a groundbreaking masterpiece, still has its consequences. Read more to know the reasons why.</p>
+                      <a href="index6.html" class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                   <!--end of card#3-->
                 </div>
               </div>
-
-
-            </div>
-            <div class="carousel-item">
-      <div class="row justify-content-center">
-<div class="col-sm-6 col-md-4">
-              <!--start of card#4-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#4-->
-</div>            
-
-            <div class="col-sm-6 col-md-4">
-              <!--start of card#5-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#5-->
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <!--start of card#6-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#6-->
-
-            </div>
-          </div>
-          </div>
-        </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      <!-- end of carousel -->
         </div>
 
         <!-- 3rd row for cards + header -->
         <div class="row mb-3">
           <h1 class="heading">Pop Culture</h1>
           <br>
-          <!-- cards in a carousel -->
-        <div id="carouselExampleIndicators3" class="carousel slide my-5" data-bs-ride="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row justify-content-center">
-                <div class="col-sm-6 col-md-4">
+              <div class="row justify-content-center my-3 mx-auto">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#1-->
                   <div class="card h-100">
-                    <img src="imgs/card1img.webp" class="card-img-top" alt="SHEIN and Temu apps">
+                    <img src="imgs/card7img.avif" class="card-img-top" alt="Many celebrities in one picture">
                     <div class="card-body">
-                      <h5 class="card-title">SHEIN & Temu about to increase in price, consumers are upset</h5>
-                      <p class="card-text">As a result of Trump's 245% tariffs hitting China, imported goods will face a
-                        hefty price increase.</p>
-                      <a href="index1.html" class="btn btn-primary">Read more</a>
+                      <h5 class="card-title">Hollywood’s 12 most well known actors (unranked)</h5>
+                      <p class="card-text">This is a card gallery of 12 of the most famous actors that everybody knows when hearing their name.</p>
+                      <a href="index7.html" class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                   <!--end of card#1-->
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#2-->
                   <div class="card h-100">
-                    <img src="imgs/card2img.png" class="card-img-top" alt="Stocks app on a phone">
+                    <img src="imgs/card8img.avif" class="card-img-top" alt="Justin and Hailey Bieber at a photoshoot">
                     <div class="card-body">
-                      <h5 class="card-title">How to start investing</h5>
-                      <p class="card-text">This article is a step-by-step on how to start investing for beginners
-                        without any huge advanced words that are confusing.</p>
-                      <br>
-                      <a href="index2.html" class="btn btn-primary">Read more</a>
+                      <h5 class="card-title">What’s going on with Justin & Hailey Bieber?</h5>
+                      <p class="card-text">Here, we see events that happened between Justin and Hailey Bieber to understand their relationship despite controversy.</p>
+                      <a href="index8.html" class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                   <!--end of card#2-->
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#3-->
                   <div class="card h-100">
-                    <img src="imgs/card3img.webp" class="card-img-top" alt="Store closing signs on window">
+                    <img src="imgs/card9img.webp" class="card-img-top" alt="Snow White live action movie cover">
                     <div class="card-body">
-                      <h5 class="card-title">Stores closing in the big ‘25</h5>
-                      <p class="card-text">These are the stores that are closing and/or have significant financial
-                        hardships threatening a close in 2025.</p>
-                      <br>
-                      <a href="index3.html" class="btn btn-primary">Read more</a>
+                      <h5 class="card-title">Disney’s Snow White live action controversy</h5>
+                      <p class="card-text">Here, we take a look at what happened with Disney's recent live action of Snow White to see why it was so controversial.</p>
+                      <a href="index9.html" class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                   <!--end of card#3-->
                 </div>
               </div>
-
-
-            </div>
-            <div class="carousel-item">
-      <div class="row justify-content-center">
-<div class="col-sm-6 col-md-4">
-              <!--start of card#4-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#4-->
-</div>            
-
-            <div class="col-sm-6 col-md-4">
-              <!--start of card#5-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#5-->
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <!--start of card#6-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#6-->
-
-            </div>
-          </div>
-          </div>
-        </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      <!-- end of carousel -->
         </div>
 
         <!-- 4th row for cards + header -->
         <div class="row mb-3">
           <h1 class="heading">Environment</h1>
           <br>
-          <!-- cards in a carousel -->
-        <div id="carouselExampleIndicators4" class="carousel slide my-5" data-bs-ride="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row justify-content-center">
-                <div class="col-sm-6 col-md-4">
+              <div class="row justify-content-center my-3 mx-auto">
+                <div class="col-sm-10 col-md-4 mb-3">
                   <!--start of card#1-->
                   <div class="card h-100">
-                    <img src="imgs/card1img.webp" class="card-img-top" alt="SHEIN and Temu apps">
+                    <img src="imgs/card10img.webp" class="card-img-top" alt="Solar panels">
                     <div class="card-body">
-                      <h5 class="card-title">SHEIN & Temu about to increase in price, consumers are upset</h5>
-                      <p class="card-text">As a result of Trump's 245% tariffs hitting China, imported goods will face a
-                        hefty price increase.</p>
-                      <a href="index1.html" class="btn btn-primary">Read more</a>
+                      <h5 class="card-title">Are solar panels a good idea?</h5>
+                      <p class="card-text">Solar panels have been a well known way to help the environment while still getting electricity as needed. However, is it a good idea to install this technology on your home?</p>
+                      <a href="index10.html" class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                   <!--end of card#1-->
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#2-->
                   <div class="card h-100">
-                    <img src="imgs/card2img.png" class="card-img-top" alt="Stocks app on a phone">
+                    <img src="imgs/card11img.webp" class="card-img-top" alt="ChatGPT app on phone">
                     <div class="card-body">
-                      <h5 class="card-title">How to start investing</h5>
-                      <p class="card-text">This article is a step-by-step on how to start investing for beginners
-                        without any huge advanced words that are confusing.</p>
-                      <br>
-                      <a href="index2.html" class="btn btn-primary">Read more</a>
+                      <h5 class="card-title">ChatGPT is bad for the environment, here’s why</h5>
+                      <p class="card-text">The most wonderful app to get any kind of questions answered and problems solved may have environemntal implications.</p>
+                      <a href="index11.html" class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                   <!--end of card#2-->
                 </div>
 
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 mb-3">
                   <!--start of card#3-->
                   <div class="card h-100">
-                    <img src="imgs/card3img.webp" class="card-img-top" alt="Store closing signs on window">
+                    <img src="imgs/card12img.jpg" class="card-img-top" alt="Piezoelectric sidewalks, they basically look like triangular tiles">
                     <div class="card-body">
-                      <h5 class="card-title">Stores closing in the big ‘25</h5>
-                      <p class="card-text">These are the stores that are closing and/or have significant financial
-                        hardships threatening a close in 2025.</p>
-                      <br>
-                      <a href="index3.html" class="btn btn-primary">Read more</a>
+                      <h5 class="card-title">A deep dive into Japan’s intriguing electricity sidewalks</h5>
+                      <p class="card-text">Japan has a new way of maximizing energy usage without disrupting the environment. Let's take a look at what they have to offer.</p>
+                      <a href="index12.html" class="btn btn-primary">Read more</a>
                     </div>
                   </div>
                   <!--end of card#3-->
                 </div>
               </div>
-
-
-            </div>
-            <div class="carousel-item">
-      <div class="row justify-content-center">
-<div class="col-sm-6 col-md-4">
-              <!--start of card#4-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#4-->
-</div>            
-
-            <div class="col-sm-6 col-md-4">
-              <!--start of card#5-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#5-->
-            </div>
-
-            <div class="col-sm-6 col-md-4">
-              <!--start of card#6-->
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Coming Soon</h5>
-                </div>
-              </div>
-              <!--end of card#6-->
-
-            </div>
-          </div>
-          </div>
-        </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      <!-- end of carousel -->
         </div>
       
 
