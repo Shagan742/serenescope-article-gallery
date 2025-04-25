@@ -1,0 +1,41 @@
+/* html */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #FFDFDF;
+}
+
+
+
+/* navbar */
+#submitBtn {
+    font-size: 30px;
+    padding:none;
+    margin:none;
+}
+
+#searchInput {
+    height:40px;
+}
+
+.navbar {
+    height:60px;
+    background-color: #FFFAFA;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+.navbar-brand {
+    position:relative;
+    bottom:3px;
+
+    font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  font-size:40px;
+}
+

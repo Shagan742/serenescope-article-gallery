@@ -7,8 +7,6 @@ body {
     background-color: #FFDFDF;
 }
 
-
-
 /* navbar */
 #submitBtn {
     font-size: 30px;
@@ -29,7 +27,11 @@ body {
     font-size: 20px;
 }
 .navbar-brand {
-    font-size:30px;
+    font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  font-size:40px;
     position:relative;
     bottom:3px;
 }
@@ -51,14 +53,6 @@ body {
   font-style: normal;
   letter-spacing: 5px;
   margin-top:60px;
-}
-
-.navbar-brand {
-    font-family: "Italianno", cursive;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 5px;
-  font-size:40px;
 }
 
 .jumboheading {
