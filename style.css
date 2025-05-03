@@ -151,3 +151,8 @@ input {
   font-weight: 400;
   font-style: normal;
 }
+
+.offcanvas {
+    /* background-color:rgb(255, 223, 223); */
+    background-color: rgba(255,255,250, 0.8);
+}
