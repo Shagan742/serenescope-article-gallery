@@ -1,58 +1,83 @@
-//bring my articles here
-let articleOne=document.getElementById('articleOne')
-let articleTwo=document.getElementById('articleTwo')
-let articleThree=document.getElementById('articleThree')
-let articleFour=document.getElementById('articleFour')
-let articleFive=document.getElementById('articleFive')
-let articleSix=document.getElementById('articleSix')
-let articleSeven=document.getElementById('articleSeven')
-let articleEight=document.getElementById('articleEight')
-let articleNine=document.getElementById('articleNine')
-let articleTen=document.getElementById('articleTen')
-let articleEleven=document.getElementById('articleEleven')
-let articleTwelve=document.getElementById('articleTwelve')
+//bring my articles here just in case
+let articleOne = document.getElementById('articleOne')
+let articleTwo = document.getElementById('articleTwo')
+let articleThree = document.getElementById('articleThree')
+let articleFour = document.getElementById('articleFour')
+let articleFive = document.getElementById('articleFive')
+let articleSix = document.getElementById('articleSix')
+let articleSeven = document.getElementById('articleSeven')
+let articleEight = document.getElementById('articleEight')
+let articleNine = document.getElementById('articleNine')
+let articleTen = document.getElementById('articleTen')
+let articleEleven = document.getElementById('articleEleven')
+let articleTwelve = document.getElementById('articleTwelve')
 
 
 //my article array for searching thing
-let myArticles=['SHEIN & Temu about to increase in price, consumers are upset', 
-    'How to start investing', 
-    'Stores closing in the big ‘25', 
-    'An investigation of the University of Waterloo effect', 
-    'The rise of quantum computing', 
-    'The long term consequences of CRISPR and Gene Editing', 
-    'Hollywood’s 12 most well known actors (unranked)', 
-    'What’s going on with Justin & Hailey Bieber?', 
-    'Disney’s Snow White live action controversy', 
-    'Are solar panels a good idea?', 
-    'ChatGPT is bad for the environment, here’s why', 
-    'A deep dive into Japan’s intriguing electricity sidewalks']
+let myArticles = ['<a class="makeLinksBetterLoooking" href="index1.html">shein & temu about to increase in price, consumers are upset</a>',
+    '<a class="makeLinksBetterLoooking" href="index2.html">how to start investing</a>',
+    '<a class="makeLinksBetterLoooking" href="index3.html">stores closing in the big ‘25</a>',
+    '<a class="makeLinksBetterLoooking" href="index4.html">an investigation of the university of waterloo effect</a>',
+    '<a class="makeLinksBetterLoooking" href="index5.html">the rise of quantum computing</a>',
+    '<a class="makeLinksBetterLoooking" href="index6.html">the long term consequences of crispr and gene editing</a>',
+    '<a class="makeLinksBetterLoooking" href="index7.html">hollywood’s 12 most well known actors (unranked)</a>',
+    '<a class="makeLinksBetterLoooking" href="index8.html">what’s going on with justin & hailey bieber?</a>',
+    '<a class="makeLinksBetterLoooking" href="index9.html">disney’s snow white live action controversy</a>',
+    '<a class="makeLinksBetterLoooking" href="index10.html">are solar panels a good idea?</a>',
+    '<a class="makeLinksBetterLoooking" href="index11.html">chatgpt is bad for the environment, here’s why</a>',
+    '<a class="makeLinksBetterLoooking" href="index12.html">a deep dive into japan’s intriguing electricity sidewalks</a>']
 
 //must check if whatever user puts in matches any of the words in 
 //those strings and then display whatever's with key words in them
 //thru unordered list
+let userInputArray = []
 
-let userInput=document.getElementById("searchInput").value 
-let userInputArray=[]
+document.getElementById("submitBtn").addEventListener("click", function () {
 
-if(userInput) {
-    userInputArray.push(userInput);
-}
-
-//check if userinput array has anything matching stuff in myarticles array
-for(let i=0; i<12; i++) {
-    if(myArticles[i].includes(userInput[i])) {
-        let li=document.createElement("li")
-        //adds bootstrap classes to try and style it
-        li.classList.add(
-            "list-group-item",
-            "d-flex",
-            "justify-content-between",
-            "align-items-center"
-        )
+    //get the user stuff
+    let userInput = document.getElementById("searchInput").value.toLowerCase();
 
 
-        //set innerHTML of li element w/ task list
-        li.innerHTML=`${task}`;       
+    //list the results gets added to
+    let searchStuff = document.getElementById("searchStuff")
 
+
+    //emptying the list after uses
+    searchStuff.innerText = ''
+
+    if (userInput) {
+        //pushes into array to make the thing compare
+        userInputArray.push(userInput);
+        for (let i = 0; i < myArticles.length; i++) {
+            if (myArticles[i].includes(userInput)) {
+
+                let li = document.createElement("li")
+                li.classList.add(
+                    "list-group-item",
+                    "d-block",
+                    "justify-content-center",
+                    "align-items-center"
+                )
+
+
+
+                li.innerHTML = myArticles[i];
+
+                searchStuff.appendChild(li);
+
+
+            } else {
+                document.getElementById("paragraph").textContent='Nothing found'
+            }
+        }
     }
-}
+
+
+
+})
+
+
+
+
+
+
